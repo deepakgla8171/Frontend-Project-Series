@@ -10,7 +10,16 @@ const colorContainerEls = document.querySelectorAll(".color-container");
 
 generateColors();
 
+function generateColors() {
+    colorContainerEls.forEach((colorContainerEl) => {
+        const newColorCode = randomColor();
+        colorContainerEl.style.backgroundColor = "#" + newColorCode;
+        colorContainerEl.innerText = "#" + newColorCode;
 
+
+    });
+
+}
 
 function randomColor() {
     const chars = "0123456789abcdef";
