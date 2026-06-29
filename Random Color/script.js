@@ -6,7 +6,7 @@ for (let index = 0; index < 30; index++) {
     containerEl.appendChild(colorContainerEl);
 }
 
-const colorContainerEls = document.querySelectorAll(".color-container");
+
 
 generateColors();
 
